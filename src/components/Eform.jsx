@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import "../Styles/Eform.css";
+import { useNavigate } from "react-router-dom";
 
 import { Button, Grid, Paper, TextField, Typography } from "@mui/material";
 
 const Eform = () => {
   const [input, setInput] = useState({});
+  const navigate = useNavigate();
 
   const inputHandler = (e) => {
     setInput({ ...input, [e.target.name]: e.target.value });
@@ -12,6 +14,7 @@ const Eform = () => {
   };
   const showInput = () => {
     console.log(input);
+    navigate("/employee");
   };
   return (
     <Grid>
