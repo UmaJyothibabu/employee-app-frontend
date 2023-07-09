@@ -37,7 +37,10 @@ const Navbar = (props) => {
       <List>
         <ListItem key={1} disablePadding>
           <ListItemButton sx={{ textAlign: "center" }}>
-            <Link to="/" style={{ color: "#2E3B55", textDecoration: "none" }}>
+            <Link
+              to="employee-app-frontend/"
+              style={{ color: "#2E3B55", textDecoration: "none" }}
+            >
               <ListItemText primary="Home" />
             </Link>
           </ListItemButton>
@@ -78,13 +81,19 @@ const Navbar = (props) => {
             component="div"
             sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
           >
-            <Link to="/" style={{ color: "white", textDecoration: "none" }}>
+            <Link
+              to="employee-app-frontend/"
+              style={{ color: "white", textDecoration: "none" }}
+            >
               Dashboard
             </Link>
           </Typography>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             <Button key={1} sx={{ color: "#fff" }}>
-              <Link to="/" style={{ color: "white", textDecoration: "none" }}>
+              <Link
+                to="employee-app-frontend/"
+                style={{ color: "white", textDecoration: "none" }}
+              >
                 Home
               </Link>
             </Button>

@@ -14,7 +14,7 @@ const Eform = () => {
   };
   const showInput = () => {
     console.log(input);
-    navigate("/");
+    navigate("employee-app-frontend/");
   };
   return (
     <Grid>

@@ -11,7 +11,7 @@ function App(className = "App") {
     <div>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Dashboard />} />
+        <Route path="employee-app-frontend/" element={<Dashboard />} />
         <Route
           path="/employee"
           element={
